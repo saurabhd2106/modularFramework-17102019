@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.newtours.tests.LoginTestsDataDriven">
+        <methods>
+          <include name="setup"/>
+          <include name="cleanUp"/>
+          <include name="verifyLoginToNewTours" invocation-numbers="4 5"/>
+          <include name="afterEveryTestcase"/>
+          <include name="preSetup"/>
+          <include name="postCleanup"/>
+        </methods>
+      </class> <!-- com.newtours.tests.LoginTestsDataDriven -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
